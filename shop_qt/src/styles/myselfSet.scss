@@ -1,0 +1,27 @@
+/* 导航栏样式 */
+$headNavColor:#b0b0b0;
+$headNavBg: rgb(43, 42, 42);
+$headNavItemBg:rgb(255, 255, 255);
+$subNavBg:white;
+
+/* 列表背景 */
+$listBg:#F5F5F5;
+
+/* 导航栏激活样式 */
+$headNavColor-active:#fe3a3a;
+$headNavBg-active:white;
+$headNavItemBg-active:#b0b0b0;
+$success:#83C44E;
+
+:export{
+    $headNavColor:$headNavColor;
+    $headNavBg:$headNavBg;
+    $headNavItemBg:$headNavItemBg;
+    $subNavBg:$subNavBg;
+    $listBg:$listBg;
+    $headNavColor-activee:$headNavColor-active;
+    $headNavBg-active:$headNavBg-active;
+    $headNavItemBg-active:$headNavItemBg-active;
+    $success:$success;
+
+}

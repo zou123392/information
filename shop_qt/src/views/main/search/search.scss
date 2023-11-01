@@ -1,0 +1,229 @@
+.search {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background: $listBg;
+	padding-bottom: 110px;
+
+	.top{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		// height: auto;
+		margin-bottom: 40px;
+		overflow: hidden;
+		background: rgb(255, 255, 255);
+
+		.box {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		font-size: 16px;
+		font-weight: 400;
+		padding: 20px 0 0 0;
+		width: $mainWidth;
+		height: 80px;
+		text-align: center;
+		transition: all .3s ease 0s;
+
+		.kinds {
+			height: 40px;
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 40px;
+			color: $placeholderTextColor;
+			margin-right: 30px;
+
+		}
+		.all {
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 40px;
+			width: 180px;
+			cursor: pointer;
+		}
+
+		.kindBox{
+			flex: 12;
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			margin-left: 55px;
+			
+			span{
+				width: 20%;
+				line-height: 40px;
+				height: 40px;
+				text-align: left;
+				margin-bottom: 10px;
+				cursor: pointer;
+			}
+		}
+	}
+
+	.open--active{
+		height: 200px;
+	}
+
+	.type--active{
+		color: $headNavColor-active;
+	}
+
+	.arrow{
+		height: 40px;
+		text-align: right;
+		line-height: 40px;
+		flex: 2;
+		padding: 0 15px;
+		.icon{
+			width: 20px;
+			height: 20px;
+			// background: #000;
+			cursor: pointer;
+		}
+	}
+
+	}
+
+	.resultbox{
+		width: 100%;
+
+		.searchTop {
+			margin: 0 auto;
+		width: $mainWidth;
+		padding: 15px 0;
+		margin-bottom: 95px;
+	
+		span {
+		font-weight: 600px;
+		color: $headNavColor-active;
+		}
+	}
+
+	.searchTop:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 50px;
+		width: 100vw;
+		height: 50px;
+		background: white;
+	}
+	}
+
+	
+
+  .main {
+		width: $mainWidth;
+
+    .content {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+			min-height: 608px;
+      // margin-top: 95px;
+
+      .orderList {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				width: 100%;
+				margin: 20px 0;
+        .left {
+					display: flex;
+					font-size: 14px;
+					font-weight: 600;
+					line-height: 20px;
+          .left__item {
+						display: flex;
+						justify-content: flex-start;
+						align-items: center;
+						margin-right: 35px;
+						margin-right: 35px;
+						cursor: pointer;
+						transition: all .3s ease 0s;
+						.sort{
+							font-weight: 600px;
+							margin-left: 3px;
+						}
+          }
+
+					.left__item:hover{
+						color: $headNavColor-active;
+					}
+
+					.leftItem--active{
+						color: $headNavColor-active;
+					}
+        }
+        .right {
+
+					/deep/.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+						background-color: $activeTextColor;
+						border-color:$activeTextColor ;
+					}
+					/deep/ .el-checkbox__input.is-checked+.el-checkbox__label{
+						color: $activeTextColor;
+					}
+
+					/deep/ .el-checkbox__label{
+						transition: all .5s ease 0s;
+					}
+
+					/deep/ .el-checkbox__inner:hover{
+						color: none;
+						border: 1px solid #DCDFE6;
+					}
+
+					/deep/ .el-checkbox__label:hover{
+						color: $headNavColor-active;
+					}
+
+        }
+      }
+
+      .cardList {  
+				display: flex;
+				 justify-content: flex-start;
+				 align-items: flex-start;
+				 flex-wrap: wrap;
+				height: auto;
+				min-height: 300px;
+				width: $mainWidth;
+				padding-top: 20px;
+				// background: #e98686;
+        .cardList__item {
+					margin-right: 20px;
+        }
+
+				.cardList__item:nth-of-type(4n) {
+					margin-right: 0;
+				}
+
+				.empty{
+					width: 100%;
+					height: auto;
+					margin-top: 32px;
+				}
+      }
+
+			// 分页
+			
+      /deep/ .el-pagination {
+        margin-top: 90px;
+        text-align: center;
+      }
+
+      /deep/.el-pagination.is-background .el-pager li:not(.disabled).active{
+        background-color: $brandColor;
+      }
+    }
+  }
+}

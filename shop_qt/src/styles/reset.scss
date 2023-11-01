@@ -1,0 +1,70 @@
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:link {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Muli", sans-serif;
+	font-weight: 600;
+	color: $primaryTextColor;
+	line-height: 1.2;
+	vertical-align: inherit;
+}
+
+html,
+body {
+  font-size: $fontsize;
+	height: 100%;
+	margin: 0;
+}
+
+.clearfix :after {
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+	}
+
+
+//mac风格滚动条样式
+::-webkit-scrollbar {
+	width: 10px;
+	height:100%;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 1em;
+	background-color: rgba(50, 50, 50, .2);
+}
+::-webkit-scrollbar-thumb:hover{
+	background-color: rgba(50, 50, 50, .4);
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 1em;
+	background-color: rgba(50, 50, 50, .1);
+}

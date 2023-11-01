@@ -1,0 +1,57 @@
+    .hot-product {
+      padding: 0px 0 100px 0;
+      background-color: $workspaceBgColor;
+      min-height: 500px;
+
+        // p {
+        //   font-size: 30px;
+        //   letter-spacing: 4px;
+        //   text-align: center;
+        //   margin-bottom: 10px;
+        // }
+
+        .title{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        width: 100%;    
+         p {
+          width: $mainWidth;
+          font-size: 22px;
+          line-height: 30px;
+          color: $subTextColor;
+          margin-bottom: 25px;
+        }
+      }
+
+      .product-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        overflow: auto;
+        max-width: 1260px;
+
+        .card {
+          margin: 0 15px 30px;
+        }
+      }
+
+      .emtype {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .emtype-icon {
+          font-size: 88px;
+          margin-bottom: 15px;
+        }
+
+        .emtype-title {
+          font-weight: 600;
+          font-size: 20px;
+        }
+      }
+    }

@@ -1,0 +1,26 @@
+@mixin ellipsis($num,$nowrap) {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  // display: -webkit-box;
+	white-space:$nowrap;  /* 强制不换行 */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $num; /* 这里是超出几行省略 */
+}
+
+@mixin scrollbar($width,$height){
+   //mac风格滚动条样式
+   ::-webkit-scrollbar {
+    width: 4px;
+    height: 100%;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 1em;
+    background-color: rgba(50, 50, 50, 0.3);
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 1em;
+    background-color: rgba(50, 50, 50, 0.1);
+  }
+}

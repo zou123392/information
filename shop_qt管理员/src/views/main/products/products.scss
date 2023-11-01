@@ -1,0 +1,32 @@
+.product-list {
+  background-color: #fff;
+  padding: 15px;
+  min-height: 800px;
+
+  .title {
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 15px;
+  }
+
+  .pagination-box {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .img-box {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    margin: 0 auto;
+    overflow: hidden;
+    img{
+      width: 100%;
+    }
+  }
+
+  .post {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,178 @@
+.main {
+	border-top: 1px solid $headNavColor-active;
+	width: 100%;
+	height: auto;
+	background: $listBg;
+  .cart {
+		margin: 0 auto;
+		min-height: 718px;
+    .step {
+      background: white;
+			/deep/.el-steps--simple{
+				padding: 25px 3%;
+				margin-top: 0 !important;
+				background: white;
+				width:$mainWidth;
+				margin: 0 auto;
+			}
+
+			/deep/.el-step__head.is-success,/deep/.el-step__title.is-success{
+				color: $headNavColor-active;
+				border-color:$headNavColor-active;
+			}
+    }
+    .content {
+			margin: 40px auto;
+			min-height: 500px;
+			width:$mainWidth;
+		
+      &__title {
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				flex-basis: auto;
+				height: 45px;
+				margin: 0 auto;
+				overflow: hidden;
+				padding: 10px 48px;
+				position: sticky;
+				top: 0;
+				width: 100%;
+				z-index: 6;
+				background: white;
+				.btn{
+					height: 18px;
+					width: 18px;
+					cursor: pointer;
+
+							.checked{
+					font-size: 18px;
+					color: $headNavColor-active;
+					
+				}
+				.cancel{
+					display: block;
+					width: 18px;
+					height: 18px;
+					border-radius: 50%;
+					border: 1px solid $subTextColor;
+				}
+
+				}
+		
+				.con{
+					font-size: 14px;
+					color: #b0b0b0;
+					line-height: 24px;
+					text-align: left;
+					margin-left: 30px;
+					
+				}
+
+				.text1 {
+					width:145px ;
+        }
+        .text2 {
+					width: 400px;
+        }
+        .text3 {
+					text-align: center;
+					width: 130px;
+        }
+        .text4 {
+					text-align: center;
+					width: 130px;
+        }
+        .text5 {
+					text-align: center;
+					width: 135px;
+        }
+      }
+      .product {
+				margin-top: 10px;
+				background: white;
+      }
+    }
+    .empty {
+			min-height: 500px;
+      .goshoping {
+				font-size: 16px;
+				color: white;
+				padding: 10px 20px;
+				border-radius: 6px;
+				cursor: pointer;
+				background: $headNavColor-active;
+      }
+    }
+
+		.setment{
+			position: sticky;
+			bottom: 0;
+			width: 100%;
+			height: 68px;
+			background: white;
+			section{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin: 0 auto;
+				width: $mainWidth;
+				height: 100%;
+				// background: pink;
+				.msg{
+					display: flex;		
+					justify-content: flex-start;	
+					align-items: center;
+					flex-flow: row nowrap;
+					flex-basis: auto;
+					overflow: hidden;
+					height: 100%;
+					font-size: 18px;
+					font-weight: 300;
+					line-height: 22px;
+
+					.delete{
+						color: red;
+						cursor: pointer;
+						// padding-right: 20px;
+					}
+					.checkedNum{
+						color: $normalTextColor;
+						span{
+							font-weight: 400;
+							color: $headNavColor-active;
+						}
+					}
+				}
+				.goSetment{
+					display: flex;
+					justify-content: flex-end;
+					align-items: center;
+					height: 100%;
+					width: 50%;
+					font-size: 22px;
+					font-weight: 400;
+					text-align: center;
+					line-height: 68px;
+
+					.totle{
+				
+						color: $headNavColor-active;
+						margin-right: 30px;
+					}
+
+					.goRoute{
+						color: white;
+						height: 100%;
+						padding: 0 40px;
+						background: $headNavColor-active;
+						cursor: pointer;
+					}
+			}
+			}
+		
+
+			
+		}
+  }
+}

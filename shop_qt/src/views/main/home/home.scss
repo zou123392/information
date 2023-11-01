@@ -1,0 +1,126 @@
+.home {
+.banner{
+position: relative;
+.leftNav{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-267%,0);
+  width: auto;
+  height: 100%;
+  z-index: 1000;
+}
+}
+
+.cardOne{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+&__top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: $mainWidth;
+  margin-top: 15px;
+  .pic{
+    width: 24%;
+    min-height: 173px;
+    cursor: pointer;
+    img{
+      width: 100%;
+    }
+  }
+}
+&__bottom{
+ width: $mainWidth;
+ height: auto;
+ margin: 15px 0 30px 0; 
+ transition: all .5s ease 0s;
+ cursor: pointer;
+ img{
+  width: 100%;
+  border: 0;
+  box-sizing: border-box;
+ }
+}
+&__bottom:hover{
+  box-shadow: -1px 7px 16px 0px rgba(104, 94, 94, 0.6);
+}
+}
+
+/* 公司组件*/
+.company{
+  width: 100%;
+  background-color: #F5F5F5;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: center;
+ padding: 20px 0 40px 0;
+ &__sort{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: $mainWidth;
+  .title{  
+    height: 58px;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    color: #212121;
+  }
+
+  }
+
+  &__productList{
+    display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: $mainWidth;
+    margin-top: 40px;
+    .title{
+      height: 58px;
+      font-size: 22px;
+      font-weight: 200;
+      line-height: 58px;
+      color: #212121;
+    }
+  }
+}
+
+/** 用户商品列表*/
+.userProductList{
+  width: 100%;
+  background-color: #F5F5F5;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: center;
+ padding: 0 0 40px 0;
+
+ .box{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: $mainWidth;
+   .title{  
+  height: 58px;
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 58px;
+  color: #212121;
+}
+.item{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ }
+}
+}
